@@ -25,7 +25,7 @@ import javax.swing.filechooser.FileNameExtensionFilter;
  * Hello world!
  *
  */
-public class editorTExto 
+public class editorTexto 
 {
     static File ficheroActual;
     public static void main( String[] args )
