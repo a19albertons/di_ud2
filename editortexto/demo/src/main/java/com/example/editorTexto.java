@@ -149,6 +149,9 @@ public class editorTexto
                     // tu abres el programa y lo cierras desde salir
                     // porque la primera instrucion del try no tiene
                     // un fichero que leer
+
+                    // Nota requiere añadir un System.exit(0)
+                    System.exit(0);
                 }
 
 
