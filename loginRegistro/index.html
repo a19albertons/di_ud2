@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Login</h1>
+        <p class="gray">Login to access your travelwise account</p>
+        <form>
+            <div class="field">
+                <label for="email">Email:   </label>
+                <input id="email" name="email" type="email" class="noBorder">
+            </div>
+            <br>
+            <div class="field">
+                <label>Password:</label>
+                <input id="password" name="password" type="password" class="noBorder">
+            </div>
+            <br>
+
+            <div class="flexBetween">
+                <div class="flex">
+                    <input type="checkbox" id="recuerdame" name="recuerdame">
+                    <label for="recuerdame">Remember me</label>
+                </div>
+                <p class="margenSuperior"><a href="recuperarcontraseña/index.html" class="sinDecoracion">Forgot password</a></p>
+            </div>
+            <div>
+                <input type="submit" value="Login" class="submit">
+            </div>
+            <div class="flexCenter">
+                <p>Don't have an account? <a class="sinDecoracion" href="registro/index.html">Sign up</a></p>
+            </div>
+
+            <div class="flexCenter">
+                <hr class="hrEstilos">
+                <span class="loginSeparator">or login with</span>
+                <hr class="hrEstilos">
+            </div>
+            <div class="gridLogin">
+                <div class="social"><img src="img/facebook.png" alt="Facebook logo" class="socialImg"></div>
+                <div class="social"><img src="img/google.webp" alt="Google logo" class="socialImg"></div>
+                <div class="social"><img src="img/apple.svg" alt="Apple logo" class="socialImg"></div>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

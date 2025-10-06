@@ -1,0 +1,123 @@
+/* Estilos trasladados desde index.html, adaptados a la convención del proyecto */
+* {
+    box-sizing: border-box;
+}
+body { 
+    margin: 0; 
+    padding: 0; 
+    font-family: Arial, 
+    Helvetica, sans-serif; 
+}
+.container {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 20px 0;
+}
+.gray {
+    color: gray;
+}
+
+
+/* Crea el borde rojo */
+.field {
+    position: relative;
+    border: 2px solid red;
+    border-radius: 6px;
+    padding: 14px 12px 12px; 
+    background: #fff;
+    margin-bottom: 12px;
+}
+
+/* Mueve el label y lo posiciona de forma que este por encima de la linea y le pone fondo blanco */
+.field label {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background: #fff;
+    padding: 0 6px;
+    font-weight: 700;
+    color: #111;
+    font-size: 14px;
+    line-height: 1;
+}
+
+/* Oculta los bordes por defecto del input */
+.noBorder {
+    box-sizing: border-box;
+    width: 100%;
+    border: none;
+    padding: 0;
+    background: transparent;
+    outline: none;
+    font-weight: 700;
+    color: #111;
+    display: block;
+}
+
+
+
+/* Utilities flex */
+.flex {
+    display: flex;
+    align-items: center;
+}
+.flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flexBetween {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.margenSuperior {
+    margin-top: 10px;
+}
+
+/* Botón submit (nombre usado en otros ficheros) */
+.submit {
+    width: 100%;
+    background-color: blue;
+    color: white;
+    border: 0;
+    height: 30px;
+    cursor: pointer;
+}
+
+/* Enlaces sin decoración */
+.sinDecoracion {
+    text-decoration: none;
+}
+
+/* Separador estilo login */
+.loginSeparator {
+    padding: 0 10px;
+}
+.hrEstilos {
+    flex: 1;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+/* Grid para proveedores sociales (igual que gridLogin en otros ficheros) */
+.gridLogin {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+.social {
+    border: 1px solid black;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.socialImg {
+    width: 24px;
+    height: 24px;
+}
+

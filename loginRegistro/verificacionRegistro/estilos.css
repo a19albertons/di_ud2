@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.backLink {
+    color: black;
+    text-decoration: none;
+}
+
+.gray {
+    color: gray;
+}
+
+/* Crea el borde rojo */
+.field {
+    position: relative;
+    border: 2px solid red;
+    border-radius: 6px;
+    padding: 14px 12px 12px; 
+    background: #fff;
+    margin-bottom: 12px;
+}
+
+/* Mueve el label y lo posiciona de forma que este por encima de la linea y le pone fondo blanco */
+.field label {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background: #fff;
+    padding: 0 6px;
+    font-weight: 700;
+    color: #111;
+    font-size: 14px;
+    line-height: 1;
+}
+
+/* Oculta los bordes por defecto del input */
+.noBorder {
+    box-sizing: border-box;
+    width: 100%;
+    border: none;
+    padding: 0;
+    background: transparent;
+    outline: none;
+    font-weight: 700;
+    color: #111;
+    display: block;
+}
+
+.submit {
+    width: 100%;
+    background-color: blue;
+    color: white;
+    border: 0;
+    height: 30px;
+}
+
+.flex-left {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.rojo {
+    color: red;
+}

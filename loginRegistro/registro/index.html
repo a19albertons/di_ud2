@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Login</h1>
+    <p class="gray">Login to access your travelwise account</p>
+        <form>
+            <div class="dosDos">
+                <div class="flex field margenDerecha">
+                    <label>First Name:</label>
+                    <input src="first_name" class="noBorder">
+                </div>
+                <div class="flex field">
+                    <label>Last Name:</label>
+                    <input src="last_name" class="noBorder">
+                </div>
+                <div class="flex field margenSuperior margenDerecha">
+                    <label>Email:</label>
+                    <input src="email" type="email" class="noBorder">
+                </div>
+                <div class="flex field margenSuperior">
+                    <label>Phone Number:</label>
+                    <input src="phone" type="tel" class="noBorder">
+                </div>
+            </div>
+            <div class="unoUno">
+                <div class="flex field">
+                    <label>Password:</label>
+                    <input src="password" type="password" class="noBorder">
+                </div>
+                <div class="flex field margenSuperior">
+                    <label>Confirm Password:</label>
+                    <input src="confirm_password" type="password" class="noBorder">
+                </div>
+            </div>
+            <br>
+            <div >
+                <div class="flex">
+                    <input type="checkbox" src="condiciones" required>
+                    <label>I agree to the terms and conditions</label>
+                </div>
+            </div>
+            <br>
+            <div>
+                <input type="submit" formaction="../verificacionRegistro/index.html" value="Create account" class="submit">
+            </div>
+            <div class="flexCenter">
+                <p>Already have an account? <a href="../index.html" class="sinDecoracion">Login</a></p>
+            </div>
+
+            <div class="flex">
+                <hr class="hrEstilos">
+                    <span class="loginSeparator">or login with</span>
+                <hr class="hrEstilos">
+            </div>
+            <div class="gridLogin">
+                <div class="social">
+                    <img src="img/facebook.png" alt="Facebook logo" class="socialImg">
+                </div>
+                <div class="social">
+                    <img src="img/google.webp" alt="Google logo" class="socialImg">
+                </div>
+                <div class="social">
+                    <img src="img/apple.svg" alt="Apple logo" class="socialImg">
+                </div>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
