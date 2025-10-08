@@ -1,0 +1,193 @@
+* {
+    font-family: Bayon;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('img/fondo.png');
+}
+
+.barra {
+    height: 5vh;
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 90%;
+}
+.barra_mitad {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo {
+    height: 80%;
+}
+.barra_mitad2 {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.rotar {
+    position: absolute;
+    transform-origin: center;
+    transform: rotate(270deg);
+    margin-left: 2px;
+}
+.seccion {
+    margin-right: 30px;
+}
+.busqueda {
+    background-color: white;
+    border-radius: 60px;
+}
+.tamano {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    margin-right: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.cesta {
+    background-color: #000000;
+    border-radius: 60px;
+}
+.fotos {
+    width: 100%;
+}
+.barra_derecha {
+    position: absolute;
+    margin-left: 90vw;
+    display: flex;
+    width: 10vw;
+    height: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.circulo_derecha {
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+
+.pintado {
+    background-color: #fe5915;
+    color: #f1f1f1;
+}
+
+.central {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 15%;
+    width: 90%;
+}
+
+.posicionar_titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.segunda_mitad {
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+.ordenar {
+    display: flex;
+}
+
+.compra_ahora {
+    background-color: #fe5915;
+    width: 140px;
+    height: 50px;
+    color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto_play {
+    height: 75px;
+}
+
+.play {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+
+.titulo {
+    font-size: 60px;
+    margin: 0px;
+}
+
+.texto_fondo {
+    position: absolute;
+    width: 100vw;
+    top: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.haibike_imagen {
+    position: absolute;
+    width: 90%;
+}
+.bike_imagen {
+    position: absolute;
+    width: 50%;
+    margin-top: 13%;
+    margin-left: 5%;
+}
+
+.final {
+    margin-left: 2%;
+    width: 96%;
+    margin-top: 48%;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.final_parte1 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.final_parte2 {
+    display: flex;
+    justify-content: end;
+}
+.final_tamano {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    margin-left: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.final_tamano_especial {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.final_botones {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    margin-left: 10px;
+    align-items: center;
+    justify-content: center;
+}
