@@ -14,6 +14,8 @@ body
   color: #073763;
   line-height: 1.5;
 }
+/* Paragraph and inline text color: dark gray for better readability */
+p, span { color: #333333; }
 
 :root {
   /* brand/background colors and sizes */
@@ -140,13 +142,14 @@ h1, h2, h3, h4, h5, h6,
 /* Shared components */
 .btn
 {
-  background: #222;
+  background: #FF5841; /* user requested button color */
   color: #fff;
   border: none;
   padding: 10px 16px;
   border-radius: 4px;
   cursor: pointer;
 }
+.btn:hover { background: #e14b36; }
 
 /* previously used to push content down for fixed header, now removed */
 body > main,
