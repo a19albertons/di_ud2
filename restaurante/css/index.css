@@ -1,0 +1,93 @@
+/* Styles for index (home) page */
+
+.hero img
+{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+
+.block
+{
+  display: grid;
+  grid-template-columns: 1fr 50%;
+  gap: 30px;
+  align-items: center;
+}
+
+.block .text h2
+{
+  color: #0b4ea0;
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+
+.block .text .lead,
+.block .text .more
+{
+  max-width: 520px;
+}
+
+.block .text .lead
+{
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.block .text .more
+{
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.block .image img
+{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.block.reverse
+{
+  grid-template-columns: 50% 1fr;
+}
+
+/* small responsive tweaks specific to index */
+@media (max-width: 900px)
+{
+  .block
+  {
+    grid-template-columns: 1fr;
+  }
+
+  .block.reverse
+  {
+    grid-template-columns: 1fr;
+  }
+
+  .block .image img
+  {
+    height: 100%;
+  }
+
+  .hero img
+  {
+    height: 100%;
+  }
+}
+
+@media (max-width: 480px)
+{
+  .hero img
+  {
+    height: 100%;
+  }
+
+  .block .image img
+  {
+    height: 100%;
+  }
+}

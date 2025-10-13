@@ -1,0 +1,141 @@
+/* Styles for contacto page */
+
+.hero
+{
+  padding: 60px 0 20px;
+}
+
+.hero .hero-inner
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center; /* vertically center the grid cells */
+  gap: 30px;
+  min-height: 260px;
+}
+
+.hero .location-text
+{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical centering inside the cell */
+  align-items: center; /* horizontal centering inside the cell */
+  text-align: center;
+}
+
+.hero .location-text h3
+{
+  color: #0b4ea0;
+  font-size: 22px;
+  margin-bottom: 18px;
+}
+
+.hero .location-text p
+{
+  color: #333;
+}
+
+.hero .map-wrapper
+{
+  justify-self: stretch;
+  width: 100%;
+  max-width: none;
+  overflow: hidden;
+  height: 100%;
+}
+
+.hero .map-wrapper iframe
+{
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+.contact-grid
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.contact-card
+{
+  padding: 20px;
+}
+
+.contact-card h3
+{
+  color: #0b4ea0;
+  margin-bottom: 12px;
+}
+
+.contact-card p
+{
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.contact-form input[type=text],
+.contact-form textarea
+{
+  display: block;
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+}
+
+/* disable manual resize of textarea */
+.contact-form textarea {
+  resize: none;
+}
+
+/* Validation UI */
+.contact-form .field-error{
+  color: #b00020;
+  font-size: 0.9rem;
+  margin-top: 6px;
+}
+.contact-form .invalid{ outline: 2px solid rgba(176,0,32,0.12); }
+.form-feedback{ margin-top: 12px; font-size: 0.95rem; }
+.form-feedback.success{ color: #0a7a07; }
+.form-feedback.error{ color: #b00020; }
+
+.contact-form button
+{
+  background: #111;
+  color: #fff;
+  padding: 8px 14px;
+  border: none;
+}
+
+/* Make inputs full width on small screens */
+@media (max-width: 900px)
+{
+  .contact-grid
+  {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-card input[type=text],
+  .contact-card textarea
+  {
+    width: 100%;
+  }
+
+  .hero .map-wrapper
+  {
+    height: 160px;
+  }
+}
+
+/* Ensure the iframe scales down nicely on very small screens */
+@media (max-width: 480px)
+{
+  .hero .map-wrapper
+  {
+    height: 140px;
+  }
+}

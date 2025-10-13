@@ -1,0 +1,201 @@
+/* General site styles and resets used across pages */
+
+/* Basic reset */
+*
+{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body
+{
+  font-family: 'Roboto';
+  color: #073763;
+  line-height: 1.5;
+}
+
+:root {
+  /* brand/background colors and sizes */
+  --bg-color: #F8F7F4;
+  /* header height used for spacing so content doesn't hide under fixed header */
+  --header-height: 70px;
+  /* current footer color (kept as-is). Change to #FFC107 if you prefer the other tone */
+  --footer-color: #f6b500;
+}
+
+/* Load web fonts: Montserrat for headings/titles and Roboto for body text */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+/* Apply page background */
+body { background-color: var(--bg-color); }
+
+.container
+{
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Header */
+.site-header
+{
+  background: #0056b3;
+  color: #fff;
+  /* make header fixed so it stays visible while scrolling */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  /* height removed to allow dynamic sizing */
+}
+
+.main-nav
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+  /* reduce vertical padding since header has a fixed height now */
+  padding: 10px 20px;
+  height: auto;
+}
+
+.main-nav a
+{
+  color: #fff;
+  text-decoration: none;
+  padding: 0 20px;
+  font-size: 20px;
+}
+
+.main-nav .logo
+{
+  color: #ffd24d;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Headings and title-like UI use Montserrat */
+h1, h2, h3, h4, h5, h6,
+.main-nav a,
+.main-nav .logo,
+.btn
+{
+  font-family: 'Montserrat';
+}
+
+.main-nav .logo span
+{
+  color: #fff;
+}
+
+/* Logo image adjustments */
+.main-nav .logo img
+{
+  display: block;
+  height: 40px;
+  width: auto;
+}
+
+/* Footer */
+.site-footer
+{
+  background: var(--footer-color);
+  color: #073763;
+  padding: 40px 0;
+}
+
+.footer-inner
+{
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  gap: 30px;
+  padding: 0 20px;
+}
+
+.footer-inner .col
+{
+  flex: 1;
+}
+
+.footer-inner h3
+{
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.footer-inner ul
+{
+  list-style: none;
+}
+
+.footer-inner li
+{
+  margin-bottom: 10px;
+}
+
+/* Shared components */
+.btn
+{
+  background: #222;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* previously used to push content down for fixed header, now removed */
+body > main,
+body main
+{
+  padding-top: 0;
+}
+
+.hidden
+{
+  display: none;
+}
+
+/* Responsive base adjustments */
+@media (max-width: 900px)
+{
+  .main-nav a
+  {
+/* Preview: remove all padding for a no-padding view (temporary override)
+   Keep footer padding so footer remains visually separated. */
+.container,
+.menu-item,
+.footer-inner,
+.main-nav,
+.hero,
+.content
+{
+  padding: 0 !important;
+}
+
+/* remove top spacing added for fixed header so content sits flush (preview) */
+body > main,
+body main
+{
+  padding-top: 0 !important;
+}
+    padding: 20px;
+  }
+
+  .footer-inner
+  {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px)
+{
+  .main-nav
+  {
+    font-size: 14px;
+  }
+}
