@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="es">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -7,15 +8,16 @@
   <link rel="stylesheet" href="css/general.css">
   <link rel="stylesheet" href="css/menu.css">
 </head>
+
 <body>
   <header id="site-header" class="site-header">
     <div class="topbar">
       <nav id="main-navigation" class="main-nav">
         <a href="index.html">inicio</a>
         <a href="menu.html">menu</a>
-  <div class="logo"><img src="img/logo.png" alt="Mare Viva logo"></div>
-  <a href="conocenos.html">nosotros</a>
-  <a href="contacto.html">contacto</a>
+        <div class="logo"><img src="img/logo.png" alt="Mare Viva logo"></div>
+        <a href="conocenos.html">nosotros</a>
+        <a href="contacto.html">contacto</a>
       </nav>
     </div>
   </header>
@@ -23,42 +25,56 @@
   <main id="main-content">
 
 
-  <section id="menu-grid" class="menu-grid container">
-      <div class="menu-item text-only">
-        <h3>Entrante</h3>
-        <p class="dish">Ameijoas à Bulhão Pato</p>
+    <section id="menu-grid" class="menu-grid container">
+      <div class="menu-item text-column">
+        <h2 class="menu-section-title">Entrantes</h2>
+        <div class="text">
+          <h3>Entrante</h3>
+          <ul class="dishes">
+            <li><span class="dish-name">Almejas a la Bulhão Pato</span><span class="price">12,50 €</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="menu-item image-only">
+        <img src="img/menu/ameijoas.png" alt="Almejas">
       </div>
 
-      <div class="menu-item image-only">
-        <img src="img/menu/ameijoas.png" alt="ameijoas">
-      </div>
+
 
       <div class="menu-item image-only">
         <video src="img/menu/bacalao.mp4" poster="img/menu/bacalao.png" controls muted playsinline preload="metadata">
-          Your browser does not support the video element. You can <a href="img/menu/bacalao.mp4">download the video</a> instead.
+          Your browser does not support the video element. You can <a href="img/menu/bacalao.mp4">download the video</a>
+          instead.
         </video>
       </div>
 
-      <div class="menu-item text-only">
-        <h3>Bacalao</h3>
-        <ul>
-          <li>Bacalhau com natas</li>
-          <li>Bacalhau a bras</li>
-          <li>Bacalhau a Lagareiro</li>
-        </ul>
+      <div class="menu-item text-column">
+        <h2 class="menu-section-title">Pescados</h2>
+        <div class="text">
+          <h3>Bacalao</h3>
+          <ul class="dishes">
+            <li><span class="dish-name">Bacalao con nata</span><span class="price">16,00 €</span></li>
+            <li><span class="dish-name">Bacalao a la Brás</span><span class="price">15,50 €</span></li>
+            <li><span class="dish-name">Bacalao al Lagareiro</span><span class="price">17,00 €</span></li>
+          </ul>
+        </div>
       </div>
 
-      <div class="menu-item text-only">
-        <h3>Postre</h3>
-        <ul>
-          <li>Pastel de Nata</li>
-          <li>Ovos Moles de Aveiro</li>
-        </ul>
+      <div class="menu-item text-column">
+        <h2 class="menu-section-title">Postres</h2>
+        <div class="text">
+          <h3>Postre</h3>
+          <ul class="dishes">
+            <li><span class="dish-name">Pastel de nata</span><span class="price">3,50 €</span></li>
+            <li><span class="dish-name">Huevos moles de Aveiro</span><span class="price">3,00 €</span></li>
+          </ul>
+        </div>
       </div>
-
       <div class="menu-item image-only">
         <img src="img/menu/pasteisdenata.png" alt="postre">
       </div>
+
+
     </section>
 
     <footer id="site-footer" class="site-footer">
@@ -84,9 +100,12 @@
         <div class="col">
           <h3>Síguenos</h3>
           <ul class="social-list">
-            <li><a class="social-link" href="#" aria-label="Twitter"><img class="social-icon" src="img/twitter.avif" alt="Twitter"></a></li>
-            <li><a class="social-link" href="#" aria-label="Facebook"><img class="social-icon" src="img/facebook.png" alt="Facebook"></a></li>
-            <li><a class="social-link" href="#" aria-label="TikTok"><img class="social-icon" src="img/tiktok.avif" alt="TikTok"></a></li>
+            <li><a class="social-link" href="#" aria-label="Twitter"><img class="social-icon" src="img/twitter.avif"
+                  alt="Twitter"></a></li>
+            <li><a class="social-link" href="#" aria-label="Facebook"><img class="social-icon" src="img/facebook.png"
+                  alt="Facebook"></a></li>
+            <li><a class="social-link" href="#" aria-label="TikTok"><img class="social-icon" src="img/tiktok.avif"
+                  alt="TikTok"></a></li>
           </ul>
         </div>
       </div>
@@ -96,4 +115,5 @@
   <script src="js/script.js"></script>
   <script src="js/menu.js"></script>
 </body>
+
 </html>

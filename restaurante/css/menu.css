@@ -1,84 +1,129 @@
 /* Styles for menu page */
 
-.menu-hero
-{
+.menu-hero {
   background: #fff;
   padding: 30px 0 10px;
 }
 
-.menu-title
-{
+.menu-title {
   color: #0b4ea0;
   text-align: center;
   font-size: 32px;
   margin: 10px 0;
 }
 
-.menu-grid
-{
+.menu-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0;
 }
 
-.menu-item
-{
+/* Section title row spans full width */
+
+.menu-item.section-title {
+  /* default: occupy single grid cell; use the modifier .full to span both columns */
+  background: transparent;
+  padding: 18px 30px;
+  border-bottom: none;
+}
+
+.menu-item.section-title.full {
+  grid-column: 1 / -1;
+}
+
+.menu-section-title {
+  font-size: 28px;
+  color: #0b4ea0;
+  margin: 0;
+}
+
+/* Dish rows: name left, price right */
+.dishes {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.dishes li {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  align-items: center;
+}
+
+.dish-name {
+  color: #073763;
+  margin-right: 10px;
+}
+
+.price {
+  color: #FF5841;
+  font-weight: 600;
+}
+
+/* Right-column container used to sit next to media items (video/image) */
+.menu-item.text-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px;
+}
+
+.menu-item.text-column .menu-section-title {
+  margin-bottom: 12px;
+}
+
+.menu-item {
   background: #f7f6f4;
   padding: 30px;
   border-bottom: 1px solid #eee;
 }
 
-.menu-item h3
-{
+.menu-item h3 {
   color: #0b4ea0;
   margin-bottom: 12px;
 }
 
-.menu-item ul
-{
+.menu-item ul {
   list-style: none;
   padding-left: 0;
   color: #333;
 }
 
-.menu-item.image-only
-{
+.menu-item.image-only {
   padding: 0;
 }
 
-.menu-item.image-only img
-{
+.menu-item.image-only img {
   width: 100%;
   height: 360px;
   object-fit: cover;
   display: block;
 }
 
-.menu-item.image-only video
-{
+.menu-item.image-only video {
   width: 100%;
   height: 360px;
   object-fit: cover;
   display: block;
 }
 
-.text-only
-{
+.text-only {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-@media (max-width: 900px)
-{
-  .menu-grid
-  {
+@media (max-width: 900px) {
+  .menu-grid {
     grid-template-columns: 1fr;
   }
+
   .menu-item.image-only img,
-  .menu-item.image-only video
-  {
+  .menu-item.image-only video {
     height: 240px;
   }
 }
