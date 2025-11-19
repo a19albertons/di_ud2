@@ -101,6 +101,13 @@ h1, h2, h3, h4, h5, h6,
   width: auto;
 }
 
+/* Simple ayuda de navegación: color de texto para la vista activa */
+.main-nav a.active,
+.main-nav a[aria-current="page"] {
+  color: #FF5841;
+  font-weight: 600;
+}
+
 /* Footer */
 .site-footer
 {

@@ -14,3 +14,23 @@ document.addEventListener('DOMContentLoaded', function(){
     });
   });
 });
+
+// --- Ayuda de navegación: marcar enlace activo ---
+document.addEventListener('DOMContentLoaded', function(){
+  var nav = document.getElementById('main-navigation');
+  if(!nav) return;
+  var links = nav.querySelectorAll('a[href]');
+  var path = window.location.pathname.split('/').pop();
+  if(!path) path = 'index.html';
+
+  links.forEach(function(a){
+    var href = a.getAttribute('href');
+    if(!href) return;
+    var hrefFile = href.split('/').pop();
+    if(hrefFile === path || (hrefFile === 'index.html' && (path === '' || path === 'index.html'))){
+      a.classList.add('active');
+      a.setAttribute('aria-current','page');
+    }
+  });
+});
+
