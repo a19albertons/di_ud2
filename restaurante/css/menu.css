@@ -18,6 +18,14 @@
   gap: 0;
 }
 
+
+/* Allergen legend and badges */
+.menu-legend { padding: 12px 30px; background: transparent; color: #333; font-size: 14px; }
+.menu-legend p { margin: 0 0 6px 0; }
+.menu-legend .legend-item { display: inline-flex; align-items: center; gap: 8px; margin-right: 12px; }
+.allergen-badge { display: inline-block; min-width: 20px; height: 20px; line-height: 20px; text-align: center; border-radius: 4px; background: #FF5841; color: #fff; font-size: 12px; font-weight: 700; }
+.allergens { display: inline-flex; gap: 6px; margin-left: 8px; }
+
 /* Section title row spans full width */
 
 .menu-item.section-title {
