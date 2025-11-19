@@ -8,6 +8,29 @@
   display: block;
 }
 
+/* Centered overlay title for index hero (match conocenos behavior) */
+.hero
+{
+  position: relative;
+}
+
+.hero .hero-overlay
+{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.hero .hero-overlay h1
+{
+  color: #111;
+  font-size: 40px;
+  display: inline-block;
+}
+
 
 
 .block

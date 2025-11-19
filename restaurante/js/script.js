@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function(){
         btn.textContent = 'Mostrar menos';
       } else {
         more.classList.add('hidden');
-        btn.textContent = 'Mostrar mas';
+        btn.textContent = 'Mostrar más';
       }
     });
   });
