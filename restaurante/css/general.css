@@ -164,6 +164,11 @@ h3 {
   margin-bottom: 10px;
 }
 
+/* Color específico para el enlace/texto "Reservas" en los footers */
+.site-footer .reservas {
+  color: #FF5841;
+}
+
 /* Footer social icons (transparent logos) */
 .footer-inner .social-list {
   list-style: none;
