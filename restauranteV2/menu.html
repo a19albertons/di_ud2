@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Restaurant Menu</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <script src="js/menu.js"></script>
+  <link rel="stylesheet" href="css/menu.css" />
+</head>
+
+<body class="font-display bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark">
+  <div class="relative flex min-h-screen w-full flex-col">
+    <div class="layout-container flex h-full grow flex-col">
+      <div class="flex flex-1 justify-center">
+        <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+          <header id="menu-header"
+            class="sticky top-0 z-10 flex items-center justify-between whitespace-nowrap border-b border-solid border-[#f3ece7] dark:border-[#2f241a] bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm px-4 md:px-10 py-3">
+            <div class="flex items-center gap-4 text-[#1b130d] dark:text-[#f3ece7]">
+              <img src="img/logo.png" alt="Logo del Restaurante" class="size-6">
+              <h2 class="text-[#1b130d] dark:text-[#f3ece7] text-lg font-bold leading-tight tracking-[-0.015em]">
+                El Sabor Moderno</h2>
+            </div>
+            <div class="flex flex-1 justify-end gap-8">
+              <div class="hidden md:flex items-center gap-9">
+                <a class="text-[#1b130d] dark:text-[#f3ece7] text-sm font-medium leading-normal" href="index.html">Inicio</a>
+                <a class="text-primary text-sm font-bold leading-normal" href="menu.html">Menú</a>
+                <a class="text-[#1b130d] dark:text-[#f3ece7] text-sm font-medium leading-normal" href="conocenos.html">Conócenos</a>
+                <a class="text-[#1b130d] dark:text-[#f3ece7] text-sm font-medium leading-normal" href="contacto.html">Contacto</a>
+              </div>
+              <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em]">
+                <span class="truncate">Reservar</span>
+              </button>
+            </div>
+          </header>
+        </div>
+      </div>
+    </div>
+    <main id="menu-content" class="flex flex-col items-center w-full px-4 sm:px-6 lg:px-8">
+      <div class="w-full max-w-5xl mx-auto">
+        <section id="menu-video" class="my-8 md:my-12">
+          <div
+            class="relative flex items-center justify-center bg-cover bg-center aspect-video w-full rounded-xl overflow-hidden"
+            data-alt="A cinematic shot of the restaurant's kitchen with chefs preparing food."
+            style='background-image: url("img/menu/hero.jpg");'>
+            <div class="absolute inset-0 bg-black/30"></div>
+            <button
+              class="relative flex shrink-0 items-center justify-center rounded-full size-16 bg-white/30 text-white backdrop-blur-sm transition-transform hover:scale-110">
+              <span class="material-symbols-outlined text-4xl">play_arrow</span>
+            </button>
+          </div>
+        </section>
+        <div class="w-full">
+          <section class="pt-8" id="appetizers">
+            <h2
+              class="text-text-light dark:text-text-dark text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
+              Aperitivos</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
+              <div class="flex flex-col gap-3">
+                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                  data-alt="A plate of perfectly grilled octopus tentacles with herbs."
+                  style='background-image: url("img/menu/dish1.jpg");'>
+                </div>
+                <div>
+                  <p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">Pulpo a la
+                    Parrilla</p>
+                  <p class="text-text-muted-light dark:text-text-muted-dark text-sm font-normal leading-normal">Pulpo
+                    tierno con pimentón ahumado y aceite de oliva.</p>
+                  <p class="text-text-light dark:text-text-dark text-sm font-bold leading-normal mt-1">$18</p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3">
+                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                  data-alt="Crispy golden potatoes with a spicy red sauce and white aioli."
+                  style='background-image: url("img/menu/dish2.jpg");'>
+                </div>
+                <div>
+                  <p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">Patatas Bravas</p>
+                  <p class="text-text-muted-light dark:text-text-muted-dark text-sm font-normal leading-normal">Patatas
+                    crujientes con salsa de tomate picante y alioli.</p>
+                  <p class="text-text-light dark:text-text-dark text-sm font-bold leading-normal mt-1">$12</p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3">
+                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                  data-alt="Golden brown croquettes filled with creamy Iberian ham."
+                  style='background-image: url("img/menu/dish3.jpg");'>
+                </div>
+                <div>
+                  <p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">Croquetas de Jamón
+                    Ibérico</p>
+                  <p class="text-text-muted-light dark:text-text-muted-dark text-sm font-normal leading-normal">
+                    Croquetas cremosas con auténtico jamón ibérico.</p>
+                  <p class="text-text-light dark:text-text-dark text-sm font-bold leading-normal mt-1">$14</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="pt-8" id="main-courses">
+            <h2
+              class="text-text-light dark:text-text-dark text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
+              Nuestras Burgers</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
+              <div class="flex flex-col gap-3">
+                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                  data-alt="A classic cheeseburger with lettuce, tomato, and onion."
+                  style='background-image: url("img/menu/dish4.jpg");'>
+                </div>
+                <div>
+                  <p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">Burger Clásica</p>
+                  <p class="text-text-muted-light dark:text-text-muted-dark text-sm font-normal leading-normal">Carne de
+                    res, queso cheddar, lechuga, tomate y nuestra salsa especial.</p>
+                  <p class="text-text-light dark:text-text-dark text-sm font-bold leading-normal mt-1">$15</p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3">
+                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                  data-alt="A burger with crispy bacon, cheese, and barbecue sauce."
+                  style='background-image: url("img/menu/dish5.jpg");'>
+                </div>
+                <div>
+                  <p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">Burger BBQ Bacon
+                  </p>
+                  <p class="text-text-muted-light dark:text-text-muted-dark text-sm font-normal leading-normal">Carne de
+                    res, bacon crujiente, queso suizo y salsa barbacoa ahumada.</p>
+                  <p class="text-text-light dark:text-text-dark text-sm font-bold leading-normal mt-1">$17</p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3">
+                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                  data-alt="A gourmet burger with mushrooms, Swiss cheese, and truffle aioli."
+                  style='background-image: url("img/menu/dish6.jpg");'>
+                </div>
+                <div>
+                  <p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">Burger de
+                    Champiñones</p>
+                  <p class="text-text-muted-light dark:text-text-muted-dark text-sm font-normal leading-normal">Carne de
+                    res, champiñones salteados, queso suizo y alioli de trufa.</p>
+                  <p class="text-text-light dark:text-text-dark text-sm font-bold leading-normal mt-1">$18</p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3">
+                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                  data-alt="A spicy burger with jalapeños, pepper jack cheese, and chipotle mayo."
+                  style='background-image: url("img/menu/dish7.jpg");'>
+                </div>
+                <div>
+                  <p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">Burger Picante</p>
+                  <p class="text-text-muted-light dark:text-text-muted-dark text-sm font-normal leading-normal">Carne de
+                    res, jalapeños, queso pepper jack y mayonesa de chipotle.</p>
+                  <p class="text-text-light dark:text-text-dark text-sm font-bold leading-normal mt-1">$16</p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3">
+                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                  data-alt="A vegetarian burger patty with avocado, lettuce, and tomato."
+                  style='background-image: url("img/menu/dish8.jpg");'>
+                </div>
+                <div>
+                  <p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">Burger Vegetariana
+                  </p>
+                  <p class="text-text-muted-light dark:text-text-muted-dark text-sm font-normal leading-normal">
+                    Hamburguesa de lentejas y champiñones, aguacate y brotes frescos.</p>
+                  <p class="text-text-light dark:text-text-dark text-sm font-bold leading-normal mt-1">$16</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="pt-8" id="desserts">
+            <h2
+              class="text-text-light dark:text-text-dark text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
+              Postres</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
+              <div class="flex flex-col gap-3">
+                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                  data-alt="A rich and creamy cheesecake slice with berry compote."
+                  style='background-image: url("img/menu/dish9.jpg");'>
+                </div>
+                <div>
+                  <p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">Tarta de Queso
+                    Casera</p>
+                  <p class="text-text-muted-light dark:text-text-muted-dark text-sm font-normal leading-normal">Cremosa
+                    tarta de queso al horno con compota de frutos rojos.</p>
+                  <p class="text-text-light dark:text-text-dark text-sm font-bold leading-normal mt-1">$9</p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3">
+                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                  data-alt="A warm chocolate lava cake with a scoop of vanilla ice cream."
+                  style='background-image: url("img/menu/dish10.jpg");'>
+                </div>
+                <div>
+                  <p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">Coulant de
+                    Chocolate</p>
+                  <p class="text-text-muted-light dark:text-text-muted-dark text-sm font-normal leading-normal">Pastel
+                    de chocolate tibio con corazón líquido y helado de vainilla.</p>
+                  <p class="text-text-light dark:text-text-dark text-sm font-bold leading-normal mt-1">$10</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <footer id="menu-footer"
+          class="mt-16 border-t border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark">
+          <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+              <div>
+                <h3 class="font-bold text-text-light dark:text-text-dark mb-2">El Sabor Moderno</h3>
+                <p class="text-sm text-text-muted-light dark:text-text-muted-dark">Experimenta la pasión por la cocina
+                  en
+                  cada plato.</p>
+              </div>
+              <div>
+                <h3 class="font-bold text-text-light dark:text-text-dark mb-2">Contacto</h3>
+                <p class="text-sm text-text-muted-light dark:text-text-muted-dark">123 Calle Ficticia, Madrid, España
+                </p>
+                <p class="text-sm text-text-muted-light dark:text-text-muted-dark">info@sabormoderno.com</p>
+                <p class="text-sm text-text-muted-light dark:text-text-muted-dark">(+34) 912 345 678</p>
+              </div>
+              <div>
+                <h3 class="font-bold text-text-light dark:text-text-dark mb-2">Horario</h3>
+                <p class="text-sm text-text-muted-light dark:text-text-muted-dark">Martes - Domingo: 13:00 - 23:00</p>
+                <p class="text-sm text-text-muted-light dark:text-text-muted-dark">Lunes: Cerrado</p>
+              </div>
+            </div>
+            <div
+              class="mt-8 pt-8 border-t border-border-light dark:border-border-dark text-center text-sm text-text-muted-light dark:text-text-muted-dark">
+              <p>© 2025 Alberto Noceda Sestayo. Todos los derechos reservados.</p>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </main>
+  </div>
+
+</body>
+
+</html>

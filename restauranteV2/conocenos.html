@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Conócenos - Nombre del Restaurante</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <script src="js/conocenos.js"></script>
+    <link rel="stylesheet" href="css/conocenos.css" />
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-[#1b130d] dark:text-[#f3ece7]">
+    <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+        <div class="layout-container flex h-full grow flex-col">
+            <div class="flex flex-1 justify-center">
+                <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+                    <header id="about-header"
+                        class="sticky top-0 z-10 flex items-center justify-between whitespace-nowrap border-b border-solid border-[#f3ece7] dark:border-[#2f241a] bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm px-4 md:px-10 py-3">
+                        <div class="flex items-center gap-4 text-[#1b130d] dark:text-[#f3ece7]">
+                            <img src="img/logo.png" alt="Logo del Restaurante" class="size-6">
+                            <h2
+                                class="text-[#1b130d] dark:text-[#f3ece7] text-lg font-bold leading-tight tracking-[-0.015em]">
+                                El Sabor Moderno</h2>
+                        </div>
+                        <div class="flex flex-1 justify-end gap-8">
+                            <div class="hidden md:flex items-center gap-9">
+                                <a class="text-[#1b130d] dark:text-[#f3ece7] text-sm font-medium leading-normal"
+                                    href="index.html">Inicio</a>
+                                <a class="text-[#1b130d] dark:text-[#f3ece7] text-sm font-medium leading-normal"
+                                    href="menu.html">Menú</a>
+                                <a class="text-primary text-sm font-bold leading-normal" href="conocenos.html">Conócenos</a>
+                                <a class="text-[#1b130d] dark:text-[#f3ece7] text-sm font-medium leading-normal"
+                                    href="contacto.html">Contacto</a>
+                            </div>
+                            <button
+                                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em]">
+                                <span class="truncate">Reservar</span>
+                            </button>
+                        </div>
+                    </header>
+                    <main id="about-content" class="flex flex-col gap-10 md:gap-16 py-10 md:py-16">
+                        <div id="about-hero" class="@container px-4">
+                            <div class="bg-cover bg-center flex flex-col justify-end overflow-hidden rounded-lg min-h-80"
+                                data-alt="Interior del restaurante por la noche, con iluminación cálida y mesas preparadas"
+                                style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 25%), url("img/conocenos/hero.jpg");'>
+                                <div class="flex p-6 md:p-8">
+                                    <p class="text-white text-[28px] md:text-4xl font-bold leading-tight">El Alma de
+                                        Nuestro Restaurante</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="about-mission" class="px-4 text-center max-w-3xl mx-auto">
+                            <p
+                                class="text-[#1b130d] dark:text-[#f3ece7] text-base md:text-lg font-normal leading-relaxed pb-3 pt-1">
+                                Un breve párrafo que resume nuestra misión y valores. Creemos en la cocina tradicional,
+                                los ingredientes frescos y en crear un espacio donde cada comida se sienta como en casa.
+                            </p>
+                        </div>
+                        <div id="about-story" class="px-4 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+                            <div class="flex flex-col">
+                                <h1
+                                    class="text-[#1b130d] dark:text-[#f3ece7] text-[22px] font-bold leading-tight tracking-[-0.015em] pb-3">
+                                    Nuestros Inicios</h1>
+                                <p
+                                    class="text-[#1b130d]/80 dark:text-[#f3ece7]/80 text-base font-normal leading-relaxed">
+                                    Nuestra historia comenzó con la pasión de nuestros fundadores por la auténtica
+                                    cocina familiar. Un sueño de compartir recetas transmitidas de generación en
+                                    generación, en un ambiente que evoca la calidez del hogar. Cada plato que servimos
+                                    es un homenaje a nuestras raíces y a los ingredientes locales que hacen única
+                                    nuestra gastronomía.
+                                </p>
+                            </div>
+                            <div class="w-full h-80 rounded-lg bg-center bg-no-repeat bg-cover"
+                                data-alt="Fotografía en blanco y negro de los fundadores del restaurante sonriendo."
+                                style='background-image: url("img/conocenos/story.jpg");'>
+                            </div>
+                        </div>
+                        <div id="about-heart" class="px-4 text-center">
+                            <h1
+                                class="text-[#1b130d] dark:text-[#f3ece7] text-[22px] font-bold leading-tight tracking-[-0.015em] pb-3 pt-5">
+                                El Corazón del Restaurante</h1>
+                            <p
+                                class="text-[#1b130d]/80 dark:text-[#f3ece7]/80 text-base md:text-lg font-normal leading-relaxed max-w-3xl mx-auto">
+                                Nuestro equipo es una familia unida por el amor a la buena mesa. Desde nuestros chefs
+                                hasta el personal de sala, cada miembro aporta su talento y dedicación para que tu
+                                experiencia sea inolvidable.
+                            </p>
+                        </div>
+                        <div id="about-team" class="px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <div
+                                class="flex flex-col items-center text-center p-6 border border-[#f3ece7] dark:border-[#2f241a] rounded-lg bg-background-light dark:bg-background-dark">
+                                <img alt="Retrato del chef principal"
+                                    class="w-24 h-24 rounded-full object-cover mb-4 border-2 border-primary"
+                                    src="img/conocenos/chef1.jpg" />
+                                <h3 class="font-bold text-lg text-[#1b130d] dark:text-[#f3ece7]">Carlos Vargas</h3>
+                                <p class="text-sm text-primary font-medium">Chef Ejecutivo</p>
+                                <p class="text-sm text-[#1b130d]/70 dark:text-[#f3ece7]/70 mt-2 italic">"La cocina es el
+                                    lenguaje que uso para contar historias. Cada plato es un capítulo."</p>
+                            </div>
+                            <div
+                                class="flex flex-col items-center text-center p-6 border border-[#f3ece7] dark:border-[#2f241a] rounded-lg bg-background-light dark:bg-background-dark">
+                                <img alt="Retrato de la fundadora"
+                                    class="w-24 h-24 rounded-full object-cover mb-4 border-2 border-primary"
+                                    src="img/conocenos/chef2.jpg" />
+                                <h3 class="font-bold text-lg text-[#1b130d] dark:text-[#f3ece7]">Elena Ríos</h3>
+                                <p class="text-sm text-primary font-medium">Fundadora</p>
+                                <p class="text-sm text-[#1b130d]/70 dark:text-[#f3ece7]/70 mt-2 italic">"Quería crear un
+                                    lugar donde cada cliente se sintiera como un invitado en mi propia casa."</p>
+                            </div>
+                            <div
+                                class="flex flex-col items-center text-center p-6 border border-[#f3ece7] dark:border-[#2f241a] rounded-lg bg-background-light dark:bg-background-dark">
+                                <img alt="Retrato del jefe de sala"
+                                    class="w-24 h-24 rounded-full object-cover mb-4 border-2 border-primary"
+                                    src="img/conocenos/chef3.jpg" />
+                                <h3 class="font-bold text-lg text-[#1b130d] dark:text-[#f3ece7]">Javier Morales</h3>
+                                <p class="text-sm text-primary font-medium">Jefe de Sala</p>
+                                <p class="text-sm text-[#1b130d]/70 dark:text-[#f3ece7]/70 mt-2 italic">"Mi mayor
+                                    satisfacción es ver la sonrisa de un cliente después de una gran velada."</p>
+                            </div>
+                        </div>
+                        <div id="about-gallery" class="flex w-full grow p-4">
+                            <div
+                                class="w-full gap-2 overflow-hidden aspect-[4/3] md:aspect-[2/1] rounded-lg grid grid-cols-[1fr_1fr] grid-rows-[2fr_1fr_1fr]">
+                                <div class="w-full h-full bg-center bg-no-repeat bg-cover col-span-1 row-span-3"
+                                    data-alt="Detalle de una mesa bien servida con platos de comida"
+                                    style='background-image: url("img/conocenos/gallery1.jpg");'>
+                                </div>
+                                <div class="w-full h-full bg-center bg-no-repeat bg-cover col-span-1 row-span-2"
+                                    data-alt="El personal de cocina trabajando en un plato"
+                                    style='background-image: url("img/conocenos/gallery2.jpg");'>
+                                </div>
+                                <div class="w-full h-full bg-center bg-no-repeat bg-cover col-span-1 row-span-1"
+                                    data-alt="Vista del interior del restaurante vacío, mostrando la decoración"
+                                    style='background-image: url("img/conocenos/gallery3.jpg");'>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="about-cta" class="px-4 text-center flex flex-col items-center gap-4">
+                            <h2 class="text-xl font-bold">Vive la experiencia</h2>
+                            <p class="text-[#1b130d]/80 dark:text-[#f3ece7]/80 text-base md:text-lg max-w-xl">Ahora que
+                                conoces nuestra historia, te invitamos a formar parte de ella.</p>
+                            <div class="flex gap-4 mt-4">
+                                <button
+                                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em]">
+                                    <span class="truncate">Haz una Reserva</span>
+                                </button>
+                                <button
+                                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary/20 text-primary dark:bg-primary/30 dark:text-white text-base font-bold leading-normal tracking-[0.015em]">
+                                    <span class="truncate">Ver Nuestro Menú</span>
+                                </button>
+                            </div>
+                        </div>
+                    </main>
+                    <footer id="about-footer"
+                        class="w-full mt-16 border-t border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark">
+                        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+                                <div>
+                                    <h3 class="font-bold text-text-light dark:text-text-dark mb-2">El Sabor Moderno</h3>
+                                    <p class="text-sm text-text-muted-light dark:text-text-muted-dark">Experimenta la
+                                        pasión por la cocina en
+                                        cada plato.</p>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-text-light dark:text-text-dark mb-2">Contacto</h3>
+                                    <p class="text-sm text-text-muted-light dark:text-text-muted-dark">123 Calle
+                                        Ficticia, Madrid, España</p>
+                                    <p class="text-sm text-text-muted-light dark:text-text-muted-dark">
+                                        info@sabormoderno.com</p>
+                                    <p class="text-sm text-text-muted-light dark:text-text-muted-dark">(+34) 912 345 678
+                                    </p>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-text-light dark:text-text-dark mb-2">Horario</h3>
+                                    <p class="text-sm text-text-muted-light dark:text-text-muted-dark">Martes - Domingo:
+                                        13:00 - 23:00</p>
+                                    <p class="text-sm text-text-muted-light dark:text-text-muted-dark">Lunes: Cerrado
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="mt-8 pt-8 border-t border-border-light dark:border-border-dark text-center text-sm text-text-muted-light dark:text-text-muted-dark">
+                                <p>© 2025 Alberto Noceda Sestayo. Todos los derechos reservados.</p>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

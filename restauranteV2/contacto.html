@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Contacto - El Sabor</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="css/contacto.css" />
+    <script src="js/contacto.js"></script>
+</head>
+
+<body
+    class="font-display bg-background-light dark:bg-background-dark text-text-light-primary dark:text-text-dark-primary">
+    <div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+        <div class="layout-container flex h-full grow flex-col">
+            <div class="flex flex-1 justify-center px-4 md:px-10 lg:px-20">
+                <div class="layout-content-container flex w-full max-w-6xl flex-1 flex-col">
+                    <!-- TopNavBar -->
+                    <header id="contact-header"
+                        class="sticky top-0 z-10 flex items-center justify-between whitespace-nowrap border-b border-solid border-[#f3ece7] dark:border-[#2f241a] bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm px-4 md:px-10 py-3">
+                        <div class="flex items-center gap-4 text-[#1b130d] dark:text-[#f3ece7]">
+                            <img src="img/logo.png" alt="Logo del Restaurante" class="size-6">
+                            <h2
+                                class="text-[#1b130d] dark:text-[#f3ece7] text-lg font-bold leading-tight tracking-[-0.015em]">
+                                El Sabor Moderno</h2>
+                        </div>
+                        <div class="flex flex-1 justify-end gap-8">
+                            <div class="hidden md:flex items-center gap-9">
+                                <a class="text-[#1b130d] dark:text-[#f3ece7] text-sm font-medium leading-normal"
+                                    href="index.html">Inicio</a>
+                                <a class="text-[#1b130d] dark:text-[#f3ece7] text-sm font-medium leading-normal"
+                                    href="menu.html">Menú</a>
+                                <a class="text-[#1b130d] dark:text-[#f3ece7] text-sm font-medium leading-normal"
+                                    href="conocenos.html">Conócenos</a>
+                                <a class="text-primary text-sm font-bold leading-normal" href="contacto.html">Contacto</a>
+                            </div>
+                            <button
+                                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em]">
+                                <span class="truncate">Reservar</span>
+                            </button>
+                        </div>
+                    </header>
+                    <main id="contact-content" class="flex-grow py-10 md:py-16">
+                        <!-- PageHeading -->
+                        <div id="contact-intro" class="flex flex-wrap justify-between gap-4 p-4 mb-10">
+                            <div class="flex min-w-72 flex-col gap-3">
+                                <p
+                                    class="text-4xl font-black leading-tight tracking-[-0.033em] text-text-light-primary dark:text-text-dark-primary">
+                                    Contáctanos</p>
+                                <p
+                                    class="text-base font-normal leading-normal text-text-light-secondary dark:text-text-dark-secondary">
+                                    Estamos aquí para ayudarte. Rellena el formulario o utiliza la información de
+                                    contacto a continuación.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Main Content: Two-Column Layout -->
+                        <div id="contact-main" class="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16 p-4">
+                            <!-- Left Column: Info & Map -->
+                            <div class="flex flex-col gap-10">
+                                <!-- SectionHeader for Contact Info -->
+                                <div>
+                                    <h2
+                                        class="text-[22px] font-bold leading-tight tracking-[-0.015em] pb-3 pt-5 text-text-light-primary dark:text-text-dark-primary">
+                                        Información de Contacto</h2>
+                                    <!-- DescriptionList -->
+                                    <div class="grid grid-cols-1 border-t border-border-light dark:border-border-dark">
+                                        <div class="flex items-start gap-4 py-5">
+                                            <span class="material-symbols-outlined mt-1 text-primary">location_on</span>
+                                            <div>
+                                                <p
+                                                    class="text-sm font-medium leading-normal text-text-light-secondary dark:text-text-dark-secondary">
+                                                    Dirección</p>
+                                                <p
+                                                    class="text-base font-normal leading-normal text-text-light-primary dark:text-text-dark-primary">
+                                                    Calle Ficticia 123, 08001 Barcelona, España</p>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="flex items-start gap-4 border-t border-border-light dark:border-border-dark py-5">
+                                            <span class="material-symbols-outlined mt-1 text-primary">phone</span>
+                                            <div>
+                                                <p
+                                                    class="text-sm font-medium leading-normal text-text-light-secondary dark:text-text-dark-secondary">
+                                                    Teléfono</p>
+                                                <p
+                                                    class="text-base font-normal leading-normal text-text-light-primary dark:text-text-dark-primary">
+                                                    <a class="hover:text-primary" href="tel:+34931234567">+34 931 23 45
+                                                        67</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="flex items-start gap-4 border-t border-border-light dark:border-border-dark py-5">
+                                            <span class="material-symbols-outlined mt-1 text-primary">schedule</span>
+                                            <div>
+                                                <p
+                                                    class="text-sm font-medium leading-normal text-text-light-secondary dark:text-text-dark-secondary">
+                                                    Horario de apertura</p>
+                                                <p
+                                                    class="text-base font-normal leading-normal text-text-light-primary dark:text-text-dark-primary">
+                                                    Lunes - Domingo: 12:00 PM - 11:00 PM</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Map -->
+                                <div class="flex flex-col gap-3">
+                                    <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl object-cover"
+                                        data-alt="map showing the location of the restaurant in Barcelona"
+                                        data-location="Barcelona"
+                                        style='background-image: url("img/contacto/hero.jpg");'>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Right Column: Contact Form -->
+                            <div class="flex flex-col gap-4">
+                                <h2
+                                    class="text-[22px] font-bold leading-tight tracking-[-0.015em] pb-3 pt-5 text-text-light-primary dark:text-text-dark-primary">
+                                    Envíanos un Mensaje</h2>
+                                <form class="space-y-6" novalidate>
+                                    <div>
+                                        <label
+                                            class="block text-sm font-medium text-text-light-secondary dark:text-text-dark-secondary mb-1.5"
+                                            for="name">Nombre</label>
+                                        <input
+                                            class="block w-full rounded-lg border border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark py-2 px-3 text-sm placeholder:text-text-light-secondary/70 dark:placeholder:text-text-dark-secondary/70 focus:border-primary focus:ring-primary transition-colors"
+                                            id="name" name="name" placeholder="Tu nombre completo" required
+                                            type="text" />
+                                        <!-- Validation Message -->
+                                        <p class="mt-1 text-xs text-red-500 hidden error-message" data-field="name">El nombre debe tener al menos 2 caracteres.</p>
+                                    </div>
+                                    <div>
+                                        <label
+                                            class="block text-sm font-medium text-text-light-secondary dark:text-text-dark-secondary mb-1.5"
+                                            for="email">Correo Electrónico</label>
+                                        <input
+                                            class="block w-full rounded-lg border border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark py-2 px-3 text-sm placeholder:text-text-light-secondary/70 dark:placeholder:text-text-dark-secondary/70 focus:border-primary focus:ring-primary transition-colors"
+                                            id="email" name="email" placeholder="tu@email.com" required
+                                            type="email" />
+                                        <!-- Validation Message -->
+                                        <p class="mt-1 text-xs text-red-500 hidden error-message" data-field="email">Por favor, introduce un correo electrónico válido.</p>
+                                    </div>
+                                    <div>
+                                        <label
+                                            class="block text-sm font-medium text-text-light-secondary dark:text-text-dark-secondary mb-1.5"
+                                            for="subject">Asunto</label>
+                                        <input
+                                            class="block w-full rounded-lg border border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark py-2 px-3 text-sm placeholder:text-text-light-secondary/70 dark:placeholder:text-text-dark-secondary/70 focus:border-primary focus:ring-primary transition-colors"
+                                            id="subject" name="subject" placeholder="Asunto de tu mensaje" required
+                                            type="text" />
+                                        <!-- Validation Message -->
+                                        <p class="mt-1 text-xs text-red-500 hidden error-message" data-field="subject">El asunto debe tener al menos 3 caracteres.</p>
+                                    </div>
+                                    <div>
+                                        <label
+                                            class="block text-sm font-medium text-text-light-secondary dark:text-text-dark-secondary mb-1.5"
+                                            for="message">Mensaje</label>
+                                        <textarea
+                                            class="block w-full rounded-lg border border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark py-2 px-3 text-sm placeholder:text-text-light-secondary/70 dark:placeholder:text-text-dark-secondary/70 focus:border-primary focus:ring-primary transition-colors resize-vertical"
+                                            id="message" name="message" placeholder="Escribe tu mensaje aquí..."
+                                            required rows="5"></textarea>
+                                        <!-- Validation Message -->
+                                        <p class="mt-1 text-xs text-red-500 hidden error-message" data-field="message">El mensaje debe tener al menos 10 caracteres.</p>
+                                    </div>
+                                    <div>
+                                        <button
+                                            class="w-full flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-background-dark transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                                            type="submit">
+                                            <span class="truncate">Enviar Mensaje</span>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </main>
+                    <footer id="contact-footer"
+                        class="w-full mt-16 border-t border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark">
+                        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+                                <div>
+                                    <h3 class="font-bold text-text-light dark:text-text-dark mb-2">El Sabor Moderno</h3>
+                                    <p class="text-sm text-text-muted-light dark:text-text-muted-dark">Experimenta la
+                                        pasión por la cocina en
+                                        cada plato.</p>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-text-light dark:text-text-dark mb-2">Contacto</h3>
+                                    <p class="text-sm text-text-muted-light dark:text-text-muted-dark">123 Calle
+                                        Ficticia, Madrid, España</p>
+                                    <p class="text-sm text-text-muted-light dark:text-text-muted-dark">
+                                        info@sabormoderno.com</p>
+                                    <p class="text-sm text-text-muted-light dark:text-text-muted-dark">(+34) 912 345 678
+                                    </p>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-text-light dark:text-text-dark mb-2">Horario</h3>
+                                    <p class="text-sm text-text-muted-light dark:text-text-muted-dark">Martes - Domingo:
+                                        13:00 - 23:00</p>
+                                    <p class="text-sm text-text-muted-light dark:text-text-muted-dark">Lunes: Cerrado
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="mt-8 pt-8 border-t border-border-light dark:border-border-dark text-center text-sm text-text-muted-light dark:text-text-muted-dark">
+                                <p>© 2025 Alberto Noceda Sestayo. Todos los derechos reservados.</p>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
