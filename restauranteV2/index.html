@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
 
-    
+
 </head>
 
 <body class="font-display">
@@ -30,22 +30,23 @@
                                 El Sabor Moderno</h2>
                         </div>
                         <div class="flex flex-1 justify-end gap-8">
-                            <div class="hidden md:flex items-center gap-9">
+                            <nav class="hidden md:flex items-center gap-9">
                                 <a class="text-primary text-sm font-bold leading-normal" href="index.html">Inicio</a>
                                 <a class="text-[#1b130d] dark:text-[#f3ece7] text-sm font-medium leading-normal"
                                     href="menu.html">Menú</a>
-                                <a class="text-[#1b130d] dark:text-[#f3ece7] text-sm font-medium leading-normal" href="conocenos.html">Conócenos</a>
+                                <a class="text-[#1b130d] dark:text-[#f3ece7] text-sm font-medium leading-normal"
+                                    href="conocenos.html">Conócenos</a>
                                 <a class="text-[#1b130d] dark:text-[#f3ece7] text-sm font-medium leading-normal"
                                     href="contacto.html">Contacto</a>
-                            </div>
-                            <button
+                            </nav>
+                            <a href="#"
                                 class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em]">
                                 <span class="truncate">Reservar</span>
-                            </button>
+                            </a>
                         </div>
                     </header>
                     <main id="main-content" class="flex-grow">
-                        <div id="hero-section" class="@container py-10">
+                        <section id="hero-section" class="@container py-10">
                             <div class="@[480px]:p-4">
                                 <div class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-center justify-center p-4"
                                     data-alt="A beautifully plated dish of gourmet food, with vibrant colors and artistic presentation, set against a dark, elegant background."
@@ -61,19 +62,19 @@
                                         </h2>
                                     </div>
                                     <div class="flex flex-wrap gap-3 justify-center">
-                                        <button
+                                        <a href="menu.html"
                                             class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]">
                                             <span class="truncate">Ver Menú</span>
-                                        </button>
-                                        <button
+                                        </a>
+                                        <a href="#"
                                             class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-background-light dark:bg-background-dark/80 text-[#1b130d] dark:text-[#f3ece7] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]">
                                             <span class="truncate">Hacer una Reserva</span>
-                                        </button>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div id="features-section" class="flex flex-col gap-10 px-4 py-10 @container">
+                        </section>
+                        <section id="features-section" class="flex flex-col gap-10 px-4 py-10 @container">
                             <div class="flex flex-col gap-4 text-center items-center">
                                 <h1
                                     class="text-[#1b130d] dark:text-[#f3ece7] tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]">
@@ -132,35 +133,41 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </section>
                     </main>
                     <footer id="main-footer"
-      class="w-full mt-16 border-t border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark">
-      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
-          <div>
-            <h3 class="font-bold text-text-light dark:text-text-dark mb-2">El Sabor Moderno</h3>
-            <p class="text-sm text-text-muted-light dark:text-text-muted-dark">Experimenta la pasión por la cocina en
-              cada plato.</p>
-          </div>
-          <div>
-            <h3 class="font-bold text-text-light dark:text-text-dark mb-2">Contacto</h3>
-            <p class="text-sm text-text-muted-light dark:text-text-muted-dark">123 Calle Ficticia, Madrid, España</p>
-            <p class="text-sm text-text-muted-light dark:text-text-muted-dark">info@sabormoderno.com</p>
-            <p class="text-sm text-text-muted-light dark:text-text-muted-dark">(+34) 912 345 678</p>
-          </div>
-          <div>
-            <h3 class="font-bold text-text-light dark:text-text-dark mb-2">Horario</h3>
-            <p class="text-sm text-text-muted-light dark:text-text-muted-dark">Martes - Domingo: 13:00 - 23:00</p>
-            <p class="text-sm text-text-muted-light dark:text-text-muted-dark">Lunes: Cerrado</p>
-          </div>
-        </div>
-        <div
-          class="mt-8 pt-8 border-t border-border-light dark:border-border-dark text-center text-sm text-text-muted-light dark:text-text-muted-dark">
-          <p>© 2025 Alberto Noceda Sestayo. Todos los derechos reservados.</p>
-        </div>
-      </div>
-    </footer>
+                        class="w-full mt-16 border-t border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark">
+                        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+                                <div>
+                                    <h3 class="font-bold text-text-light dark:text-text-dark mb-2">El Sabor Moderno</h3>
+                                    <p class="text-sm text-text-muted-light dark:text-text-muted-dark">Experimenta la
+                                        pasión por la cocina en
+                                        cada plato.</p>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-text-light dark:text-text-dark mb-2">Contacto</h3>
+                                    <p class="text-sm text-text-muted-light dark:text-text-muted-dark">123 Calle
+                                        Ficticia, Madrid, España</p>
+                                    <p class="text-sm text-text-muted-light dark:text-text-muted-dark">
+                                        info@sabormoderno.com</p>
+                                    <p class="text-sm text-text-muted-light dark:text-text-muted-dark">(+34) 912 345 678
+                                    </p>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-text-light dark:text-text-dark mb-2">Horario</h3>
+                                    <p class="text-sm text-text-muted-light dark:text-text-muted-dark">Martes - Domingo:
+                                        13:00 - 23:00</p>
+                                    <p class="text-sm text-text-muted-light dark:text-text-muted-dark">Lunes: Cerrado
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="mt-8 pt-8 border-t border-border-light dark:border-border-dark text-center text-sm text-text-muted-light dark:text-text-muted-dark">
+                                <p>© 2025 Alberto Noceda Sestayo. Todos los derechos reservados.</p>
+                            </div>
+                        </div>
+                    </footer>
                 </div>
             </div>
         </div>
